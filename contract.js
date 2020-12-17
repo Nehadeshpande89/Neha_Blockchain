@@ -191,7 +191,7 @@ const abi = [
 	}
 ]
 
-const address = "0x616d0057798285f8c98718a90b43ff44cc6a40f9"
+const address = "0xBf222aF1622d33A6fD082710D7075c2e5d66E244"
 const owner = "0x1e83857F5cE64C2D7d7F485EDcbd1407E2106c36"
 
 const contract = new web3.eth.Contract(abi, address)

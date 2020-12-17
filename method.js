@@ -2,16 +2,17 @@ const Web3 = require('web3')
 var BigNumber = require('big-number');
 var Tx = require('ethereumjs-tx').Transaction
 var fs = require("fs")
-var array = fs.readFileSync('accounts.txt', 'utf8').split('\n');
+var arr = fs.readFileSync('accounts.txt', 'utf8').split('\n');
+var _totalAccounts = 10;
 
-const web3 = new Web3('https://ropsten.infura.io/v3/29909081a8eb4d88be572d92a3b37b58')
+const web3 = new Web3('https://ropsten.infura.io/v3/29909081a8eb4d88be572d92a3b37b58') //Neha : infura Url
 
 
-const account1 = '0x1e83857F5cE64C2D7d7F485EDcbd1407E2106c36' 
+const account1 = '0x1e83857F5cE64C2D7d7F485EDcbd1407E2106c36' // Neha : MetaMask1 account
 const privateKey1 = Buffer.from('98f59d27a6759cb075e828ca430ce6159048cde2a136ef2232518a60cd7bee1e', 'hex')
 
 
-const contractAddress = '0x616d0057798285f8c98718a90b43ff44cc6a40f9'
+const contractAddress = '0xBf222aF1622d33A6fD082710D7075c2e5d66E244'
 
 const contractABI = [{"constant":true,"inputs":[],"name":"name","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_spender","type":"address"},{"name":"_value","type":"uint256"}],"name":"approve","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"totalSupply","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_from","type":"address"},{"name":"_to","type":"address"},{"name":"_value","type":"uint256"}],"name":"transferFrom","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"standard","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"balanceOf","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"symbol","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_to","type":"address"},{"name":"_value","type":"uint256"}],"name":"transfer","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"},{"name":"","type":"address"}],"name":"allowance","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_from","type":"address"},{"indexed":true,"name":"_to","type":"address"},{"indexed":false,"name":"_value","type":"uint256"}],"name":"Transfer","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_owner","type":"address"},{"indexed":true,"name":"_spender","type":"address"},{"indexed":false,"name":"_value","type":"uint256"}],"name":"Approval","type":"event"}]
 
@@ -65,20 +66,16 @@ const getBalanceOf = async(account) => {
 
 
 const go = async() => {
- var remainingBalance = await contract.methods.balanceOf(account1).call()
-
-  console.log("Balance",remainingBalance)
-  var bal = new BigNumber(remainingBalance)  
-  console.log("neha",bal)
-  var numberOfAddresses = 10;
- var _token_distribution = bal.div(20).div(numberOfAddresses)
- for (i= 0; i < array.length; i++) {
-   await transferFunds(account1,array[i],_token_distribution)
- }
+   var remainingBalance = await contract.methods.balanceOf(account1).call()
+   var bal = new BigNumber(remainingBalance)  
+   var token_distribution= bal.div(20).div(_totalAccounts)
+   for (let account_loop = 0; account_loop < arr.length; account_loop++) {
+     await transferFunds(account1,arr[account_loop],token_distribution)
+  }
 }
 
 
-module.exports = { transferFunds, getBalanceOf }
+module.exports = { transferFunds, getBalanceOf ,go}  // Exporting the three methods in contract.js
   
 //go()
 
