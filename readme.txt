@@ -41,6 +41,8 @@ Step XI : Run handler.js using curl -XPOST http://localhost:8080/transfer or nod
 
 Step XII : To see on webserver use http://localhost:8080/
 
+***Docker***
+
 Step XIII : To build a docker container from your Dockerfile (and .dockerignore) files (note by default it uses the file called Dockerfile) use
 docker build -t [yourusername/tag] 
 for example : docker build -t [8379074499/blockchain] 
