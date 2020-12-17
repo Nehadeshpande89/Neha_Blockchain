@@ -15,6 +15,29 @@ Image : docker pull 8379074499/neha:123
 
 
 
+*** Pre-requisits ***
+1.create Wallet of Ropsten testnet ETH for storing cryptocurrencies.Also create account in metamask by installing metamask.
+
+URL : 
+
+Metamask: https://metamask.io
+
+Faucet: https://faucet.metamask.io/
+
+
+2.Create account in infura 
+
+3.Need Smart contract IDE online
+
+URL :
+ https://remix.ethereum
+
+ 4.Installed nodeJS and code editor i.e visual studio.
+
+ 5. Install git on local machine
+
+ 6. Install docker on local machine.
+
 ***To Run this project please follow the below steps***
 
 Step I : 
@@ -25,9 +48,9 @@ Step II :
 Extract the folder and open the folder and open it in your favouirate installed
 
 Step III : 
-Open Remix on broswer and paste the code from the ERC20_neha.sol file
+Open Remix IDE for deploying contract on broswer and paste the code from the ERC20_neha.sol file
 
-Step IV : After pasting deploy the contract
+Step IV : After pasting deploy the ERC20 contract
 
 Step V : Wait till the creation gets completed 
 
