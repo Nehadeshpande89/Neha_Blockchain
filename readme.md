@@ -82,7 +82,7 @@ Step X : Run method.js by using node method.js(Before running ***uncomment*** th
 Step XI : Run handler.js using curl -XPOST http://localhost:8080/transfer or node handler.js (Before running ***comment*** the method "go()" from method.js)
 
 
-Step XII : To see on webserver use http://localhost:8080/
+Step XII : To see on webserver use http://localhost:8080/transfer
 
 ***Docker***
 

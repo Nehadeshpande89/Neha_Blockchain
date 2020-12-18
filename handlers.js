@@ -11,7 +11,7 @@ app.get('/totalsupply', async (req,res) => {
 })
 
 app.post('/transfer', async (req, res) => {
-  res.send(await method.go()); // Neha : Calling method from methood.js to avoid code conflict
+  res.send(await method.go()); // Neha : Transfering to 10 accounts
 })
 
 app.get('/balance/:id', async (req, res) => {
