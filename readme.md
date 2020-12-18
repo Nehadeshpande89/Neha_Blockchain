@@ -58,6 +58,7 @@ Step VI : After creation please verfiy and publish your contract
 Step VII : Copy the contract address and paste it in method.js and contract.js
 
 for example :
+
 ****In method.js****
 const contractAddress = '0xBf222aF1622d33A6fD082710D7075c2e5d66E244'
 
@@ -65,7 +66,7 @@ const contractAddress = '0xBf222aF1622d33A6fD082710D7075c2e5d66E244'
 ****In contract.js****
 const address = "0xBf222aF1622d33A6fD082710D7075c2e5d66E244"
 
-Step VIII : Replace your metamask account in the files
+Step VIII : Put your metamask account in the files such as methood.js and contract.js
 
 
 Step IX : Install dependencies by running "npm i" command (All the required dependencies are already in package.json and package-lock.json)
@@ -75,10 +76,10 @@ Step X : Run method.js by using node method.js(Before running ****uncomment**** 
 
 
 Step XI : Run handler.js using node handler.js also on other terminal 
-put curl -XPOST http://localhost:8080/transfer and press enter (Before running ****comment**** the method "go()" from method.js)
+put ****curl -XPOST http://localhost:8080/transfer**** and press enter (Before running ****comment**** the method "go()" from method.js)
 
 
-Step XII : To see on webserver use http://localhost:8080/transfer
+Step XII : To see on webserver use ****http://localhost:8080/transfer***
 
 ## Docker
 
