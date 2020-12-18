@@ -76,10 +76,10 @@ Step VIII : Replace your metamask accounts in all the files
 Step IX : Install dependencies by running "npm i" command (All the required dependencies are already in package.json)
 
 
-Step X : Run method.js by using node method.js
+Step X : Run method.js by using node method.js(Before running ***uncomment*** the method "go()" from method.js)
 
 
-Step XI : Run handler.js using curl -XPOST http://localhost:8080/transfer or node handler.js
+Step XI : Run handler.js using curl -XPOST http://localhost:8080/transfer or node handler.js (Before running ***comment*** the method "go()" from method.js)
 
 
 Step XII : To see on webserver use http://localhost:8080/
