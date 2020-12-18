@@ -7,7 +7,7 @@ StudentID : x19203896
 Module : Blockchain
 
 
-gitHub : https://github.com/Nehadeshpande89/Neha_Blockchain.git 
+GitHub : https://github.com/Nehadeshpande89/Neha_Blockchain.git 
 
 DocerHub : https://hub.docker.com/repository/docker/8379074499/neha 
 
@@ -15,7 +15,7 @@ Image : docker pull 8379074499/neha:123
 
 
 
-*** Pre-requisits ***
+## Pre-requisits
 1.create Wallet of Ropsten testnet ETH for storing cryptocurrencies.Also create account in metamask by installing metamask.
 
 URL : 
@@ -36,7 +36,7 @@ URL : https://remix.ethereum
 
  6. Install docker on local machine.
 
-***To Run this project please follow the below steps***
+## To Run this project please follow the below steps
 
 Step I : 
 For downloading this project use below command (Make sure you have installed git on your local machine)
@@ -78,7 +78,7 @@ Step XI : Run handler.js using curl -XPOST http://localhost:8080/transfer or nod
 
 Step XII : To see on webserver use http://localhost:8080/transfer
 
-***Docker***
+## Docker
 
 Step XIII : To build a docker container from your Dockerfile (and .dockerignore) files (note by default it uses the file called Dockerfile) use
 docker build -t [yourusername/tag] 

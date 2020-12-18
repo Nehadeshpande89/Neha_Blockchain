@@ -4,7 +4,7 @@ var Tx = require('ethereumjs-tx').Transaction
 var fs = require("fs");
 const { Console } = require('console');
 var arr = fs.readFileSync('accounts.txt', 'utf8').split('\n'); // Neha : Reading accounts from account.txt
-var _totalAccounts = arr.length ; //Neha: Length of an accounts i.e _totalAccounts = 10
+var _totalAccounts = arr.length ; //Neha: Length of an accounts arr returning _totalAccounts = 10
 
 const web3 = new Web3('https://ropsten.infura.io/v3/29909081a8eb4d88be572d92a3b37b58') //Neha : infura Url
 
