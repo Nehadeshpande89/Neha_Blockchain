@@ -106,7 +106,7 @@ Example
 
 step XV : Check the running docker using below command
 
-**** docker ps **** 
+****docker ps**** 
 
 Step XVI  : commit the docker changes
 
