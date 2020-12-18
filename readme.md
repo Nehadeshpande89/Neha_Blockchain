@@ -44,7 +44,7 @@ For downloading this project use below command (Make sure you have installed git
 https://github.com/Nehadeshpande89/Neha_Blockchain.git (Access is given to eoinco)
 
 Step II : 
-Extract the folder and open the folder and open it in your favouirate installed
+Extract the folder and open the folder and open it in your favourite IDE
 
 Step III : 
 Open Remix IDE for deploying contract on broswer and paste the code from the ****ERC20_neha.sol**** file
