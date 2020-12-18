@@ -49,7 +49,7 @@ Extract the folder and open the folder and open it in your favouirate installed
 Step III : 
 Open Remix IDE for deploying contract on broswer and paste the code from the ****ERC20_neha.sol**** file
 
-Step IV : After pasting deploy the ERC20 contract by selecting Injected web3 as environment and using 0.6.6+commit.6c089d02 version.
+Step IV : After pasting deploy the ERC20 contract by selecting ****Injected web3**** as environment and using ****0.6.6+commit.6c089d02**** version.
 
 Step V : Wait till the creation gets completed 
 
