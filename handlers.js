@@ -11,8 +11,8 @@ app.get('/totalsupply', async (req,res) => {
 })
 
 app.post('/transfer', async (req, res) => {
-  res.send(await method.go()); // Neha : Transfering to 10 accounts
-})
+  res.send(await method.go()); // Neha : Transfering to 10 accounts 
+})  
 
 app.get('/balance/:id', async (req, res) => {
   var account = req.params.id

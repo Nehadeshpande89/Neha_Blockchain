@@ -4,7 +4,7 @@ var Tx = require('ethereumjs-tx').Transaction
 var fs = require("fs");
 const { Console } = require('console');
 var arr = fs.readFileSync('accounts.txt', 'utf8').split('\n'); // Neha : Reading accounts from account.txt
-var _totalAccounts = 10; //Neha: Count of the users
+var _totalAccounts = arr.length ; //Neha: Length of an accounts i.e _totalAccounts = 10
 
 const web3 = new Web3('https://ropsten.infura.io/v3/29909081a8eb4d88be572d92a3b37b58') //Neha : infura Url
 
@@ -66,6 +66,7 @@ const getBalanceOf = async(account) => {
 const go = async() => {
    var remainingBalance = await contract.methods.balanceOf(account1).call()
    console.log("Total Supply -->",remainingBalance);
+   console.log("totalAccounts--->",_totalAccounts)
    var bal = new BigNumber(remainingBalance)  
    var token_distribution= bal.div(20).div(_totalAccounts)
    for (let account_loop = 0; account_loop < arr.length; account_loop++) {
