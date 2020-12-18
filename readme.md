@@ -82,7 +82,7 @@ Step XII : To see on webserver use http://localhost:8080/transfer
 
 Step XIII : To build a docker container from your Dockerfile (and .dockerignore) files (note by default it uses the file called Dockerfile) use
 docker build -t [yourusername/tag] 
-for example : docker build -t [8379074499/blockchain] 
+for example : docker build -t 8379074499/blockchain .
 
 step XIV : Run the docker container using below command
 $docker run -p 49160:8080 --name neha -d 8379074499/blockchain
