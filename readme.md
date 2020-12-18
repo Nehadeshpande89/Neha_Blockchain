@@ -9,7 +9,7 @@ Module : Blockchain
 
 GitHub : https://github.com/Nehadeshpande89/Neha_Blockchain.git 
 
-DocerHub : https://hub.docker.com/repository/docker/8379074499/neha 
+DockerHub : https://hub.docker.com/repository/docker/8379074499/neha 
 
 Image : docker pull 8379074499/neha:123
 
