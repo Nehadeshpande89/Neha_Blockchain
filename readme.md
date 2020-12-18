@@ -58,11 +58,11 @@ Step VI : After creation please verfiy and publish your contract
 Step VII : Copy the contract address and paste it in method.js and contract.js
 
 for example :
-**In method.js
+****In method.js****
 const contractAddress = '0xBf222aF1622d33A6fD082710D7075c2e5d66E244'
 
 
-**In contract.js
+****In contract.js****
 const address = "0xBf222aF1622d33A6fD082710D7075c2e5d66E244"
 
 Step VIII : Replace your metamask account in the files
@@ -71,28 +71,30 @@ Step VIII : Replace your metamask account in the files
 Step IX : Install dependencies by running "npm i" command (All the required dependencies are already in package.json and package-lock.json)
 
 
-Step X : Run method.js by using node method.js(Before running ***uncomment*** the method "go()" from method.js)
+Step X : Run method.js by using node method.js(Before running ****uncomment**** the method "go()" from method.js)
 
 
 Step XI : Run handler.js using node handler.js also on other terminal 
-put curl -XPOST http://localhost:8080/transfer and press enter (Before running ***comment*** the method "go()" from method.js)
+put curl -XPOST http://localhost:8080/transfer and press enter (Before running ****comment**** the method "go()" from method.js)
 
 
 Step XII : To see on webserver use http://localhost:8080/transfer
 
 ## Docker
 
-Step XIII : To build a docker container from your Dockerfile (and .dockerignore) files (note by default it uses the file called Dockerfile) use
-docker build -t [yourusername/tag] 
-for example : docker build -t 8379074499/blockchain .
+Step XIII : To build a docker container from your Dockerfile (and .dockerignore) files (note by default it uses the file called Dockerfile) use below command
+****docker build -t [yourusername/tag]****
+ Example 
+****docker build -t 8379074499/blockchain .****
 
 step XIV : Run the docker container using below command
-$docker run -p 49160:8080 --name neha -d 8379074499/blockchain
+Example
+****$docker run -p 49160:8080 --name neha -d 8379074499/blockchain****
 
 Step XV  : commit the changes docker changes
 Example : 
- docker commit 56dfec1d0886 8379074499/neha:123
+ ****docker commit 56dfec1d0886 8379074499/neha:123****
 
 step V : Push your changes 
 Example : 
-docker push 8379074499/neha:123
+****docker push 8379074499/neha:123****
