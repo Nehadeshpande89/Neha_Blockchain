@@ -28,9 +28,7 @@ Faucet: https://faucet.metamask.io/
 2.Create account in infura 
 
 3.Need Smart contract IDE online
-
-URL :
- https://remix.ethereum
+URL : https://remix.ethereum
 
  4.Installed nodeJS and code editor i.e visual studio.
 
