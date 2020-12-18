@@ -16,24 +16,26 @@ Image : docker pull 8379074499/neha:123
 
 
 ## Pre-requisits
-1.create Wallet of Ropsten testnet ETH for storing cryptocurrencies.Also create account in metamask by installing metamask.
+ 1 create Wallet of Ropsten testnet ETH for storing cryptocurrencies.Also create account in metamask by installing metamask.
 
  URL :
  Metamask: https://metamask.io
 
  Faucet: https://faucet.metamask.io/
 
+ 2 Create account in infura 
+ 
+ URL : https://infura.io/
 
- 2.Create account in infura 
+ 3 Need Smart contract IDE online
 
- 3.Need Smart contract IDE online
  URL :  https://remix.ethereum.org/
 
- 4.Installed nodeJS and code editor i.e visual studio 
+ 4 Installed nodeJS and code editor i.e. visual studio 
+ 
+ 6 Install git on local machine
 
- 5. Install git on local machine
-
- 6. Install docker on local machine.
+ 7 Install docker on local machine.
 
 ## To Run this project please follow the below steps
 
