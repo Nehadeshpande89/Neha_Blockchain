@@ -18,19 +18,18 @@ Image : docker pull 8379074499/neha:123
 ## Pre-requisits
 1.create Wallet of Ropsten testnet ETH for storing cryptocurrencies.Also create account in metamask by installing metamask.
 
-URL : 
+ URL :
+ Metamask: https://metamask.io
 
-Metamask: https://metamask.io
-
-Faucet: https://faucet.metamask.io/
+ Faucet: https://faucet.metamask.io/
 
 
-2.Create account in infura 
+ 2.Create account in infura 
 
-3.Need Smart contract IDE online
-URL : https://remix.ethereum
+ 3.Need Smart contract IDE online
+ URL :  https://remix.ethereum.org/
 
- 4.Installed nodeJS and code editor i.e visual studio.
+ 4.Installed nodeJS and code editor i.e visual studio 
 
  5. Install git on local machine
 
@@ -48,7 +47,7 @@ Extract the folder and open the folder and open it in your favouirate installed
 Step III : 
 Open Remix IDE for deploying contract on broswer and paste the code from the ERC20_neha.sol file
 
-Step IV : After pasting deploy the ERC20 contract
+Step IV : After pasting deploy the ERC20 contract by selecting Injected web3 as environment and using 0.6.6+commit.6c089d02 version.
 
 Step V : Wait till the creation gets completed 
 
@@ -64,16 +63,17 @@ const contractAddress = '0xBf222aF1622d33A6fD082710D7075c2e5d66E244'
 **In contract.js
 const address = "0xBf222aF1622d33A6fD082710D7075c2e5d66E244"
 
-Step VIII : Replace your metamask accounts in all the files
+Step VIII : Replace your metamask account in the files
 
 
-Step IX : Install dependencies by running "npm i" command (All the required dependencies are already in package.json)
+Step IX : Install dependencies by running "npm i" command (All the required dependencies are already in package.json and package-lock.json)
 
 
 Step X : Run method.js by using node method.js(Before running ***uncomment*** the method "go()" from method.js)
 
 
-Step XI : Run handler.js using curl -XPOST http://localhost:8080/transfer or node handler.js (Before running ***comment*** the method "go()" from method.js)
+Step XI : Run handler.js using node handler.js also on other terminal 
+put curl -XPOST http://localhost:8080/transfer and press enter (Before running ***comment*** the method "go()" from method.js)
 
 
 Step XII : To see on webserver use http://localhost:8080/transfer
